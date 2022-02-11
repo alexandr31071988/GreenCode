@@ -1,7 +1,33 @@
 .good-group__item {
+   
 
+   img {
+      height: 192px;
+      width: 287px;
+   }
+   h2 {
+      letter-spacing: 0.24px;
+      margin-right: 100px;       
+   }
 
-  div{
+   img.likeimg {
+      height: 19px;
+      width: 20px;
+      transform: translate(130px , -45px);
+   }
 
-  }
+   div.text__1 {
+      width: 287px;
+      height: 224px;
+      display: inline-block;
+   }
 }
+   ol {
+      display: inline-block;
+      width: 325px;
+      height: 757px;
+      top: 1363px;
+      
+   }
+
+@import url("https://fonts.googleapis.com/css?family=Epilogue:400,300,700,900")

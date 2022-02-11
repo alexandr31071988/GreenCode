@@ -17,7 +17,7 @@ const About = ({}) => {
 
   return (
     <div>
-      <div>А вы знаете что?</div>
+      <div>А вы знаете,что...</div>
       <hr/>
       <ol>
         {aboutList.map(((item, index) => <li key={index + item[2]}>{item}</li>))}
