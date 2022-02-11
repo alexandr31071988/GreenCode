@@ -1,4 +1,6 @@
 import './App.css';
+import './style.scss'
+
 import Layout from './Components/Layout'
 import GoodGroupItem from './Pages/GoodGroupItem'
 import Main from './Pages/Main'

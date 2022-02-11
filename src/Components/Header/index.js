@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import MainLogo from '../../assets/img/MainLogo.svg'
 import ProfileIcon from '../../assets/img/ProfileIcon.svg'
 import NotifyIcon from '../../assets/img/NotifyIcon.svg'
@@ -8,6 +8,8 @@ import MenuIcon from '../../assets/img/MenuIcon.svg'
 import './style.scss'
 
 function Header() {
+  const [isActiveNotify, setIsActiveNotify] = useState(false)
+
    return (
       <div className="header">
          <div className="logo">
@@ -16,7 +18,9 @@ function Header() {
 
          <div className="nav-links">
             <img src={ProfileIcon}/>
-            <img src={NotifyIcon}/>
+            <span className={isActiveNotify ? "active": ""}>
+              <img src={NotifyIcon} onClick={() => setIsActiveNotify(!isActiveNotify)}/>
+            </span>
             <img src={SearchIcon}/>
             <img className="bucket" src={BucketIcon}/>
             <img className="menu" src={MenuIcon}/>

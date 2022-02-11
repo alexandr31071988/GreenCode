@@ -30,5 +30,23 @@
         margin-left: 9px;
       }
     }
+
+    span {
+      &.active {
+        display: inline-block;
+        position: relative;
+
+        &:after{
+          content: ' ';
+          width: 8px;
+          height: 8px;
+          background-color: #FD0025;
+          position: absolute;
+          border-radius: 50%;
+          top: 7px;
+          right: 9px;
+        }
+      }
+    }
   }
 }
