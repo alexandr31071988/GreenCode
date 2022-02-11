@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 const Main = () => {
 
   return(
-    <main className="App">
+    <main>
       <Link to="/catalog">Каталог товаров</Link>
       <Link to="/type/:curial">Крупа</Link>
     </main>

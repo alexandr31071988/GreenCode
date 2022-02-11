@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Header from '../Header'
 const Layout = ({children}) => {
 
   return(
     <main className="App">
-      <header>Header</header>
+      <Header/>
       {children}
     </main>
   )
